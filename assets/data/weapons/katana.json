@@ -1,0 +1,7 @@
+{
+  "damage": 24,
+  "attack_time": 30,
+  "attack_cd": 60,
+  "ranged": false,
+  "scaling": "constant"
+}

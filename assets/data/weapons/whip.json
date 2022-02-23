@@ -1,0 +1,7 @@
+"whip": {
+  "damage": 1,
+  "attack_time": 20,
+  "attack_cd": 20,
+  "ranged": false,
+  "scaling": "distance"
+}

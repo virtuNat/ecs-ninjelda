@@ -1,0 +1,158 @@
+{
+  "down": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [0, 0], 
+        "duration": 1
+      }
+    ]
+  },
+  "up": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [1, 0], 
+        "duration": 1
+      }
+    ]
+  },
+  "left": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [2, 0], 
+        "duration": 1
+      }
+    ]
+  },
+  "right": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [3, 0], 
+        "duration": 1
+      }
+    ]
+  },
+  "move_down": {
+    "loop": true, 
+    "frames": [
+      {
+        "index": [0, 1], 
+        "duration": 9
+      },
+      {
+        "index": [0, 2], 
+        "duration": 9
+      },
+      {
+        "index": [0, 3], 
+        "duration": 9
+      },
+      {
+        "index": [0, 0], 
+        "duration": 9
+      }
+    ]
+  },
+  "move_up": {
+    "loop": true, 
+    "frames": [
+      {
+        "index": [1, 1], 
+        "duration": 9
+      },
+      {
+        "index": [1, 2], 
+        "duration": 9
+      },
+      {
+        "index": [1, 3], 
+        "duration": 9
+      },
+      {
+        "index": [1, 0], 
+        "duration": 9
+      }
+    ]
+  },
+  "move_left": {
+    "loop": true, 
+    "frames": [
+      {
+        "index": [2, 1], 
+        "duration": 9
+      },
+      {
+        "index": [2, 2], 
+        "duration": 9
+      },
+      {
+        "index": [2, 3], 
+        "duration": 9
+      },
+      {
+        "index": [2, 0], 
+        "duration": 9
+      }
+    ]
+  },
+  "move_right": {
+    "loop": true, 
+    "frames": [
+      {
+        "index": [3, 1], 
+        "duration": 9
+      },
+      {
+        "index": [3, 2], 
+        "duration": 9
+      },
+      {
+        "index": [3, 3], 
+        "duration": 9
+      },
+      {
+        "index": [3, 0], 
+        "duration": 9
+      }
+    ]
+  },
+  "atk_down": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [0, 4], 
+        "duration": 1
+      }
+    ]
+  },
+  "atk_up": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [1, 4], 
+        "duration": 1
+      }
+    ]
+  },
+  "atk_left": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [2, 4], 
+        "duration": 1
+      }
+    ]
+  },
+  "atk_right": {
+    "loop": false, 
+    "frames": [
+      {
+        "index": [3, 4], 
+        "duration": 1
+      }
+    ]
+  }
+}

@@ -76,15 +76,15 @@ class Ninjelda(PygameGame):
 
 
 if __name__ == '__main__':
-    if DEBUG:
-        import cProfile
-        import pstats
-
-        with Settings(Path('.')/'config.ini') as settings:
-            cProfile.run('Ninjelda().run()', 'game_profile')
-        stats = pstats.Stats('ninjelda.profile')
-        stats.strip_dirs()
-        stats.sort_stats(pstats.SortKey.CUMULATIVE)
-        stats.print_stats(100)
-    else:
-        Ninjelda().run()
+    with Settings(Path('.')/'config.ini') as settings:
+        if DEBUG.debug:
+            import cProfile
+            import pstats
+            
+            cProfile.run('Ninjelda().run()', 'ninjelda.profile')
+            stats = pstats.Stats('ninjelda.profile')
+            stats.strip_dirs()
+            stats.sort_stats(pstats.SortKey.CUMULATIVE)
+            stats.print_stats(100)
+        else:
+            Ninjelda().run()

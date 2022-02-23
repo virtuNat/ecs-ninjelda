@@ -9,6 +9,7 @@ from support import AttrDict, Actions, FacingDir
 ASSET_PATHS = AttrDict()
 DISPLAY = AttrDict()
 KEY_CONFIG = AttrDict()
+DEBUG = False
 
 
 class Settings(object):
@@ -46,6 +47,7 @@ class Settings(object):
                 continue
             KEY_CONFIG[key] = action
 
+        DEBUG = self._parser['DEBUG'].getboolean('debug', False)
         return self
 
     def __exit__(self, exc_type, exc_value, exc_trace):

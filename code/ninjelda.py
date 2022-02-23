@@ -11,7 +11,7 @@ from ecs.pygame import (
     SortedGroup, AnimationSystem,
     PygameScene, PygameGame,
     )
-from settings import DISPLAY, Settings
+from settings import DISPLAY, DEBUG, Settings
 from support import OffsetSystem
 from tilemap import load_map, load_player_from
 from player import BoundingBox, PlayerComponent, PlayerSystem
@@ -76,12 +76,15 @@ class Ninjelda(PygameGame):
 
 
 if __name__ == '__main__':
-    import cProfile
-    import pstats
+    if DEBUG:
+        import cProfile
+        import pstats
 
-    with Settings(Path('.')/'config.ini') as settings:
-        cProfile.run('Ninjelda().run()', 'game_profile')
-    stats = pstats.Stats('game_profile')
-    stats.strip_dirs()
-    stats.sort_stats(pstats.SortKey.CUMULATIVE)
-    stats.print_stats(100)
+        with Settings(Path('.')/'config.ini') as settings:
+            cProfile.run('Ninjelda().run()', 'game_profile')
+        stats = pstats.Stats('ninjelda.profile')
+        stats.strip_dirs()
+        stats.sort_stats(pstats.SortKey.CUMULATIVE)
+        stats.print_stats(100)
+    else:
+        Ninjelda().run()
